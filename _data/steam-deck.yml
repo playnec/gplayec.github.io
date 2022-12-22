@@ -1,0 +1,8 @@
+name: Steam deck
+description: <h2>Steam Deck es el dispositivo de juego portátil más potente y lleno de funcionalidad del mundo.</h2>
+specs: "Procesador: APU AMD<br>CPU: Zen 2 4c/8t, 2.4-3.5 GHz (hasta 448 GFlops FP32)<br>GPU: 8 RDNA 2 CUs, 1.0-1.6 GHz (hasta 1.6 TFlops FP32)<br>Consumo de energía de la serie APU: 4-15 W<br>RAM: 16 GB LPDDR5 de RAM integrada (cuatro canales de 32-bit, 5500 MT/s)<br>Almacenamiento: Todos los modelos utilizan módulos 2230 m.2.<br>Todos los modelos incluyen una ranura para tarjetas microSD de alta velocidad.<br>*Algunos modelos de 256 GB y 512 GB incluyen un SSD PCIe Gen 3 x2. En nuestras pruebas, no vimos ninguna diferencia en el rendimiento del juego entre x2 y x4.<br>Controles: Botones A B X Y<br>Cruceta<br>Gatillos analógicos L y R<br>Botones superiores frontales L y R<br>Botones Vista y Menú<br>4 botones de la empuñadura asignables"
+src: '/img/steam-deck.jpg'
+link: /item/steam-deck
+prices:
+  - name: $490
+    value: 490.00

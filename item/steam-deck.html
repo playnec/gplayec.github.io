@@ -1,0 +1,29 @@
+---
+layout: basic
+title: Steam Deck
+---
+
+<div class="page-item">
+    {% assign item = site.data.steam-deck %}
+    <div class="panel">
+        <h2>{{ item.name }}</h2>
+        <div class="box">
+            <div class="view">
+                <img class="item" src="{{ item.src }}">
+            </div>
+        </div>
+        <div class="box">
+            <ul class="list-menu">
+                {% for price in item.prices %}
+                <li>Comprar <a class="btn btn-link" onclick="$.buy({{ price.value }}.toFixed(2));" href="{{ item.link }}#{{ price.value }}">portátil {{ price.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <p>{{ item.description }}</p>
+        </div>
+        <div>
+            <p>{{ item.specs }}</p>
+        </div>
+    </div>
+</div>

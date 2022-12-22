@@ -1,0 +1,8 @@
+name: Steam deck
+description: <h2>El miembro más nuevo de la familia Switch.</h2><br><p>Este nuevo sistema cuenta con una vibrante pantalla OLED de 7 pulgadas y un amplio soporte ajustable para una fácil visualización en modo de mesa. Además, esta consola cuenta con almacenamiento interno de 64 GB, audio mejorado y una base con un puerto LAN con cable integrado.</p>
+specs: "64 GB internal storage"
+src: '/img/nintendo-switch.jpg'
+link: /item/nintendo-switch
+prices:
+  - name: $415
+    value: 415.00
