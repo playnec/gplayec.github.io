@@ -1,0 +1,21 @@
+<header class="navigation">
+    <section class="content">
+        <section class="navbar">
+            <nav class="nav-brand">
+                <a class="logo" href="{{ site.url }}"><img class="svg-image" data-src="{{'img/logo.svg' | relative_url }}"></a>
+            </nav>
+            <nav id="nav-menu" class="nav-side">
+                <ul class="menu">
+                    {% for menu in site.data.menu %}
+                    <li><a href="{{menu.link}}">{{menu.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            <nav class="nav-side hide">
+                <button id="button" class="btn btn-navbar btn-collpase hide">
+                    <img class="svg-image" data-src="{{'img/svg/menu.svg' | relative_url }}">
+                </button>
+            </nav>
+        </section>
+    </section>
+</header>

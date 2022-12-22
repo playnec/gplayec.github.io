@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gplayec tienda en línea</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/base.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+	<script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript" src="/js/plugin.modal.js"></script>
+	<script type="text/javascript" src="/js/plugin.form.js"></script>
+	<script type="text/javascript" src="/js/plugin.slideshow.js"></script>
+	<script type="text/javascript" src="/js/svg-injector.min.js"></script>
+</head>
+<body>
+	<header class="navigation">
+    <section class="content">
+        <section class="navbar">
+            <nav class="nav-brand">
+                <a class="logo" href="http://localhost:4000"><img class="svg-image" data-src="/img/logo.svg"></a>
+            </nav>
+            <nav id="nav-menu" class="nav-side">
+                <ul class="menu">
+                    
+                    <li><a href="/">Principal</a></li>
+                    
+                    <li><a href="/categories">Categorias</a></li>
+                    
+                    <li><a href="/offers">Ofertas</a></li>
+                    
+                </ul>
+            </nav>
+            <nav class="nav-side hide">
+                <button id="button" class="btn btn-navbar btn-collpase hide">
+                    <img class="svg-image" data-src="/img/svg/menu.svg">
+                </button>
+            </nav>
+        </section>
+    </section>
+</header>
+	<main>
+		<div class="content">
+			<div id="slideFeatured" class="h-carousel">
+				<div class="hv-content">
+					<div class="items">
+						
+						<div class="item"><img alt="Tarjetas de regalo" src="/img/banner-1.jpg"></div>
+						
+						<div class="item"><img alt="Accesorios" src="/img/banner-2.jpg"></div>
+						
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				
+				<div class="col-4">
+					<div class="box option">
+						<img src="/img/col-1.jpg">
+						<div class="details more spacing-2 bottom-up">
+							<span>Tarjetas de regalo</span>
+							<p>Recargas de billeteras</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-4">
+					<div class="box option">
+						<img src="/img/col-2.jpg">
+						<div class="details more spacing-2 bottom-up">
+							<span>Accesorios videojuegos</span>
+							<p>Teclados Audífonos y mandos</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-4">
+					<div class="box option">
+						<img src="/img/col-3.jpg">
+						<div class="details more spacing-2 bottom-up">
+							<span>Videojuegos físico y digitales</span>
+							<p>Juegos para Playstation, Xbox, etc...</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			$('#slideFeatured').slideshow({time:2000,kind:'slide'});
+		</script>
+	</main>
+	<main>
+		<section class="content">
+			<div class="main-content">
+				<div class="section-content">
+    <div class="head-content">
+        <h3 class="title-top">Productos destacados</h3>
+    </div>
+    <div class="row">
+        
+        <div class="col-3">
+            <div class="box option">
+                <img src="/img/playstation-store.jpg">
+                <div class="more fade">
+                    <div class="fix center">
+                        <button onclick="window.location.href='/item/playstation'" class="btn btn-general">Realizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-3">
+            <div class="box option">
+                <img src="/img/steam-wallet.jpg">
+                <div class="more fade">
+                    <div class="fix center">
+                        <button onclick="window.location.href='/item/steam'" class="btn btn-general">Realizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-3">
+            <div class="box option">
+                <img src="/img/xbox-live.jpg">
+                <div class="more fade">
+                    <div class="fix center">
+                        <button onclick="window.location.href='/item/xbox'" class="btn btn-general">Realizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-3">
+            <div class="box option">
+                <img src="/img/nintendo-eshop.jpg">
+                <div class="more fade">
+                    <div class="fix center">
+                        <button onclick="window.location.href='/item/nintendo'" class="btn btn-general">Realizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+    <div class="content">
+        <div class="row main-content">
+            <div class="col-12">
+                <h3>Negocio en línea</h3>
+                <ul class="list-menu">
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Garantías</a></li>
+                    <li><a href="">Términos y condiciones</a></li>
+                    <li><a href="">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="main-content"><sub>Somos minoristas, nuestra garantía está establecida deacuerdo a nuestros términos y condiciones de compra.</sub></div>
+    </div>
+</footer>
+	<script type="text/javascript">
+
+    var option = $('.option').css({overflow: 'hidden'});
+    var optionBottom = option.find('.bottom-up');
+    
+    option.find('.bottom-up').css({overflow:'hidden',bottom:-optionBottom.width()});
+    option.hover(function(){
+        $(this).find('.bottom-up').stop().animate({bottom: 0}, 200, 'swing');
+    }, function(){
+        $(this).find('.bottom-up').stop().animate({bottom: -optionBottom.width()}, 150, 'swing');
+    });
+
+    /**/
+    option.find('.fade').css({display:'none'});
+    option.hover(function(){
+        $(this).find('.fade').stop().fadeIn(200);
+    }, function(){
+        $(this).find('.fade').stop().fadeOut(200);
+    });
+
+    /**/
+    $.buy = function(price){
+
+        $.get('/pagos', function(responde_html){
+
+            var frame = $.modal.frame({
+
+                header: function () {
+                    var close = $(document.createElement('a'))
+                        .attr('href', '#')
+                        .append($(document.createElement('span')).text('X').css({ width: 20 }));
+
+                    close.addClass('button-icon').click(function () {
+                        $.modal.close();
+                    });
+
+                    return close;
+                },
+                body: function () {
+
+                    var title = $(document.createElement('h3')).text('Debe realizar un pago de USD '+price);
+
+                    responde_html = $(responde_html);
+                    responde_html.find('fieldset')
+                    .append($(document.createElement('input')).attr({type:'hidden',name:'link',value:window.location.href}))
+                    .append($(document.createElement('input')).attr({type:'hidden',name:'total',value:price}));
+                    
+                    return [title,responde_html];
+                }
+            });
+
+            $.modal.open(frame);
+
+        });
+
+    }
+
+    SVGInjector($(document).find('.svg-image'), {
+        evalScripts: 'once'
+    });
+
+</script>
+</body>
+</html>

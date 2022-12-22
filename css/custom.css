@@ -1,0 +1,552 @@
+/*
+ * Custom design Kausari Films
+ */
+
+@font-face{
+	font-family: 'BebasNeue-Regular';
+	src: url(../fonts/BebasNeue-Regular.woff) format('woff'), url(../fonts/BebasNeue-Regular.ttf) format('truetype'), url(../fonts/BebasNeue-Regular.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Biko_Black';
+	src: url(../fonts/Biko_Black.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Biko_Bold';
+	src: url(../fonts/Biko_Bold.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Biko_Light-Restricted';
+	src: url(../fonts/Biko_Light-Restricted.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Biko_Regular';
+	src: url(../fonts/Biko_Regular.otf) format('opentype');
+}
+
+body{
+	font-family: Arial;
+	color: #343434;
+	background-color: #FFF;
+	font-size: 18px;
+}
+
+/* Icons styles */
+.iconic-sprite{
+	width: 16px;
+	height: 16px;
+}
+
+.icon-cart{
+	width: 20px;
+	height: 20px;
+	fill: #FFF;
+}
+
+/* Content and page */
+.container{
+	font-family: 'Biko_Regular';
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-color: #FFF;
+}
+
+.container .content{
+	max-width: 980px;
+	padding: 6px;
+	margin: 0 auto;
+}
+
+.container #header{
+	position: relative;
+	width: 100%;
+	background-color: #000;
+}
+
+.container #bottom{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	background-color: rgba(2, 5, 2, 0.4);
+}
+
+.container-header{
+	background-color: transparent;
+}
+
+#header .content{
+	padding: 20px 0px 20px 0px;
+}
+
+#header .logo-editor{
+	background-size: contain;
+	line-height: 0%;
+	display: block;
+}
+
+#header .logo-editor .data-src{
+	width: 150px;
+}
+
+#top-menu{
+	margin: 0px 15px;
+}
+
+#top-menu .menu{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#top-menu .menu li{
+	color: #FFF;
+}
+
+#top-menu .menu li a{
+	color: #FFF;
+	padding: 10px 15px;
+}
+
+.container .nav-top{
+	position: relative;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.container .tickets-link{
+	padding: 10px;
+	max-width: 80px;
+}
+
+.container #promo-viewer{
+	position: relative;
+	max-width: 980px;
+	margin-left: auto;
+	margin-top: 1px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+
+#promo-viewer .details-promo{
+	font-size: 17px;
+	color:#FFF;
+}
+
+.container .details-promo{
+	text-align: center;
+}
+
+.details-promo .promo-title{
+	background-color: #234EB0;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline-block;
+	width: auto;
+}
+
+.details-promo .promo-subtitle{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 30px;
+	color:#FFF;
+}
+
+.details-promo .promo-parraf{
+	line-height: 20px;
+	color:#FFF;
+}
+
+.container-background{
+	visibility: visible;
+	position: fixed;
+	margin:0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.container-background video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+}
+
+.container-background img{
+	display: none;
+}
+
+.pack{
+	margin-top: 20px;
+}
+
+.pack .pack-title{
+	margin-top: 20px;
+	padding: 15px;
+}
+
+.pack .pack-details{
+	font-family: 'BebasNeue-Regular';
+	margin: 5px;
+}
+
+.pack .pack-details .nav-list{
+	font-size: large;
+	max-width: 220px;
+	margin-left: 50px;
+}
+
+.pack .pack-details .nav-list li{
+	line-height: 40px;
+	font-size: 30px;
+	color: #000;
+}
+
+.pack .pack-value{
+	border-top: #959595 solid 1px;
+}
+
+.pack .pack-value:first-child{
+	border-top: none;
+}
+
+.pack .pack-subtitle{
+	font-family: 'BebasNeue-Regular';
+	color: #234EB0;
+}
+
+.pack .pricing-label{
+	display: inline-block;
+	line-height: normal;
+	width: 50px;
+	padding: 5px;
+	padding-bottom: 3px;
+	background-color: #234EB0;
+	color: #FFF;
+	text-align: center;
+}
+
+.pack .pricing-label.a1{
+	background-color: #DCB90A;
+}
+
+.pack .pricing-label.a2{
+	color: #FFF;
+	background-color: #BE4ED0;
+}
+
+.pack .pricing-label.a3{
+	background-color: #1BADCA;
+}
+
+.page .item-text a:visited{
+	color: #D12222;
+}
+
+.container .container-portrait{
+	display: block;
+	position: relative;
+}
+
+.box-transparent{
+	z-index: -9999em;
+}
+
+/* documetn footer styles */
+
+#footer{
+	width: 100%;
+	height: 100%;
+	color: #EDEDED;
+	background-color: #121212;
+}
+
+#footer .content{
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 30px;
+}
+
+.selected{
+	background-color: brown;
+}
+
+/* Modal style */
+
+.modal-background .modal-container{
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	background-color: #FFF;
+}
+
+.modal-container .modal-content{
+	padding: 0px;
+	max-width: 980px;
+	margin: 0 auto;
+	height: auto;
+}
+
+.modal-content-body{
+	background-color: #EDEDED;
+}
+
+/* Custom form styles */
+
+.form .btn-custom{
+	background-color: #234EB0;
+	color: #DEDEDE;
+	font-family: 'BebasNeue-Regular';
+	border: #DEDEDE 1px solid;
+	padding: 20px 30px !important;
+}
+
+.form .btn-custom:hover{
+	background-color: #DEDEDE;
+	color: #234EB0;
+	border-color: #234EB0;
+}
+
+.form .fieldset-custom-tag{
+	position: absolute;
+	font-family: 'BebasNeue-Regular';
+	font-size: 22px;
+	display: block;
+	background-color: #383838;
+	color: #FFF;
+	padding: 10px;
+	top: 0px;
+	right: 0px;
+}
+
+.form .custom-col{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 19px;
+}
+
+/* Form groups areas */
+.form .group-area{
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-bottom: 20px;
+	padding-right: 25px;
+}
+
+.form button:disabled{
+	background-color: #121212;
+	color: #959595;
+}
+
+/* Pages style */
+.custom-panel{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Arial;
+}
+
+.custom-page .page-header{
+	width: 100%;
+}
+
+.custom-page .logo{
+	padding: 15px;
+}
+
+.custom-page .code{
+	padding: 15px;
+}
+
+.custom-panel .subtitle{
+	color: #35AB0A;
+}
+
+.custom-panel .panel{
+	margin: 50px;
+}
+
+.group-panel{
+	padding: 10px;
+}
+
+.page-bottom{
+	margin-top: 40px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+/* Message box style */
+#form-messages{
+	display: none;
+}
+
+#form-messages .box{
+	display: block;
+}
+
+#form-messages .box[class*="message-"]{
+	color: #FFF;
+}
+
+#form-messages .message-error{
+	background-color: #BA0B0B;
+}
+
+#form-messages .message-warning{
+	background-color: #C68B02;
+}
+
+#form-messages .message-success{
+	background-color: #35AB0A;
+}
+
+#form-messages .box-title{
+	font-size: 17px;
+	font-weight: normal;
+	padding: 7px;
+}
+
+#form-messages .btn-close{
+	background-color: transparent;
+	cursor: pointer;
+	color:#FFF;
+}
+
+/* Media screen */
+
+@media screen and (max-width: 1280px){
+
+	#top-menu{
+		display: none;
+	}
+
+	#top-menu.visible ul,
+	#top-menu ul{
+		display: inherit !important;
+	}
+
+	#top-menu.visible{
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 100px;
+		margin: 0 !important;
+		width: 100%;
+	}
+
+	#top-menu.visible .menu{
+		width: 100%;
+		background: #DEDEDE;
+		height: auto !important;
+		padding-bottom: 10px;
+	}
+
+	#top-menu.visible .menu li{
+		display: block;
+		float: none;
+		width: 90%;
+		line-height: 30px !important;
+		height: auto !important;
+	}
+
+	#top-menu.visible .menu ul.sub-menu{
+		width: 95% !important;
+		display: inherit !important;
+		position: relative !important;
+		margin: 0px !important;
+		margin-left: 5% !important;
+		padding: 0px !important;
+	}
+
+	/* toggle navbar */
+	#navbar{
+		width: 100%;
+		display: inline-block;
+		position: relative;
+		float: none;
+	}
+	
+	#navbar::after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+	
+	#navbar-logo{
+		float: left;
+	}
+	
+	#navbar-toggle{
+		cursor: pointer;
+		display: block;
+		float: right;
+		padding: 10px;
+		margin: 25px 10px;
+	}
+	
+	#navbar-toggle .icon-menu{
+		width: 25px;
+		height: 25px;
+	}
+
+}
+
+@media screen and (max-width: 430px){
+
+	.container-background video{
+		display:none;
+	}
+
+	.container-background img{
+		display: inherit;
+		margin: 0;
+		width: 100%;
+		position: absolute;
+	}
+
+}
+
+@media (min-width: 320px) and (max-width: 463px){
+	
+	.container-background video{
+		display:none;
+	}
+	
+	.container-background img{
+		display: inherit;
+		margin: 0;
+		width: 100%;
+		position: absolute;
+	}
+
+}
+
+@media (max-width: 1024px) {
+	
+	.container-background video{
+		display:none;
+	}
+	
+	.container-background img{
+		display: inherit;
+		margin: 0;
+		width: 100%;
+		position: absolute;
+	}
+
+}
+  

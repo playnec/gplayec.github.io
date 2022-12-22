@@ -1,0 +1,9 @@
+name: Gplayec Tienda en línea
+url: http://127.0.0.1:4000
+markdown: kramdown
+permalink: /item/:title
+collections:
+  schedules:
+    output: true
+sass:
+    style: compressed

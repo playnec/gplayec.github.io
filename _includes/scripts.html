@@ -1,0 +1,62 @@
+<script type="text/javascript">
+
+    var option = $('.option').css({overflow: 'hidden'});
+    var optionBottom = option.find('.bottom-up');
+    
+    option.find('.bottom-up').css({overflow:'hidden',bottom:-optionBottom.width()});
+    option.hover(function(){
+        $(this).find('.bottom-up').stop().animate({bottom: 0}, 200, 'swing');
+    }, function(){
+        $(this).find('.bottom-up').stop().animate({bottom: -optionBottom.width()}, 150, 'swing');
+    });
+
+    /**/
+    option.find('.fade').css({display:'none'});
+    option.hover(function(){
+        $(this).find('.fade').stop().fadeIn(200);
+    }, function(){
+        $(this).find('.fade').stop().fadeOut(200);
+    });
+
+    /**/
+    $.buy = function(price){
+
+        $.get('/pagos', function(responde_html){
+
+            var frame = $.modal.frame({
+
+                header: function () {
+                    var close = $(document.createElement('a'))
+                        .attr('href', '#')
+                        .append($(document.createElement('span')).text('X').css({ width: 20 }));
+
+                    close.addClass('button-icon').click(function () {
+                        $.modal.close();
+                    });
+
+                    return close;
+                },
+                body: function () {
+
+                    var title = $(document.createElement('h3')).text('Debe realizar un pago de USD '+price);
+
+                    responde_html = $(responde_html);
+                    responde_html.find('fieldset')
+                    .append($(document.createElement('input')).attr({type:'hidden',name:'link',value:window.location.href}))
+                    .append($(document.createElement('input')).attr({type:'hidden',name:'total',value:price}));
+                    
+                    return [title,responde_html];
+                }
+            });
+
+            $.modal.open(frame);
+
+        });
+
+    }
+
+    SVGInjector($(document).find('.svg-image'), {
+        evalScripts: 'once'
+    });
+
+</script>

@@ -1,1 +1,24 @@
-<h2>Gplayec esta restaurandose apply</h2>
+---
+layout: home
+title: Gplayec tienda en línea
+---
+
+<div class="section-content">
+    <div class="head-content">
+        <h3 class="title-top">Productos destacados</h3>
+    </div>
+    <div class="row">
+        {% for item in site.data.featured %}
+        <div class="col-3">
+            <div class="box option">
+                <img src="{{ item.src | relative_url }}">
+                <div class="more fade">
+                    <div class="fix center">
+                        <button onclick="window.location.href='{{item.link}}'" class="btn btn-general">Realizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

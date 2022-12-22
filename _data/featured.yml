@@ -1,0 +1,12 @@
+- name: PlayStation Store
+  link: /item/playstation
+  src: /img/playstation-store.jpg
+- name: Steam Cartera
+  link: /item/steam
+  src: /img/steam-wallet.jpg
+- name: Xbox Live
+  link: /item/xbox
+  src: /img/xbox-live.jpg
+- name: Nintendo
+  link: /item/nintendo
+  src: /img/nintendo-eshop.jpg

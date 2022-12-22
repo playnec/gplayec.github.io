@@ -1,0 +1,13 @@
+name: Códigos billetera de Steam US
+description: Las tarjetas regalo y los códigos de la Cartera de Steam son una manera sencilla de añadir fondos a tu Cartera de Steam o de hacer el regalo perfecto a un familiar o amigo.
+src: '/img/steam-wallet.jpg'
+link: /item/steam
+prices:
+  - name: $5
+    value: 5.99
+  - name: $10
+    value: 12.50
+  - name: $20
+    value: 22.99
+  - name: $50
+    value: 53.80

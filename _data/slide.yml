@@ -1,0 +1,20 @@
+sample:
+- name: Tarjetas de regalo
+  link: /products/gifts-cards
+  src: /img/banner-1.jpg
+- name: Accesorios
+  link: /products/accesories
+  src: /img/banner-2.jpg
+sample-b:
+- name: Tarjetas de regalo
+  desc: Recargas de billeteras
+  link: /products/gifts
+  src: /img/col-1.jpg
+- name: Accesorios videojuegos
+  desc: Teclados Audífonos y mandos
+  link: /categories/accesories
+  src: /img/col-2.jpg
+- name: Videojuegos físico y digitales
+  desc: Juegos para Playstation, Xbox, etc...
+  link: /accesories/games
+  src: /img/col-3.jpg

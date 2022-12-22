@@ -1,0 +1,158 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import 'template';
+@import 'fonts';
+
+/* header styles */
+
+body{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation{
+    background-color: $bgcolor-1;
+    width: 100%;
+    .content{
+        border-top: 5px solid rgb(73, 69, 69);
+    }
+}
+
+.content{
+    max-width: $wd-site;
+}
+
+.main-content{
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+.nav-brand{
+    .logo{
+        display: block;
+        width: 190px;
+        padding: 10px;
+        svg{
+            padding: 0px;
+        }
+    }
+}
+
+/* Carousel */
+.h-carousel{
+    position: relative;
+    max-width: 980px;
+    .items{
+        position: relative;
+        .item::after{
+            content: '';
+            clear: both;
+        }
+    }
+}
+
+/* Menu */
+#nav-menu{
+    .menu{
+        line-height: 42px;
+        li{
+            a{
+                padding: 10px;
+                font-family: Arial;
+                text-transform: uppercase;
+                border-bottom: 2px solid #FFF;
+            }:hover{
+                color: rgb(134, 134, 134);
+                border-bottom: 2px solid rgb(134, 134, 134);
+            }
+        }
+    }
+}
+
+.list-menu{
+    list-style-type: none;
+}
+
+/* Box details */
+.box-out{
+    margin:10px;
+}
+.btn{
+    cursor: pointer;   
+}
+.btn-general{
+    padding: 10px;
+    border-radius: 6%;
+    &:hover{
+        background-color: rgb(50, 50, 50);
+        color:#FFF;
+    }
+}
+
+.view{
+    width: 100%;
+    .cover{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        display: block;
+    }
+}
+
+.page-item{
+    .btn-link{
+        display: inline-block;
+        padding: 2px;
+        text-decoration: underline;
+        color: rgb(4, 95, 28);
+        font-weight: bolder;
+    }
+}
+
+.modal-background{
+    .modal-content{
+        background-color: #FFF;
+        max-width: 980px;
+        display: block;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.option{
+    position: relative;
+    background-color: black;
+    .spacing-1{
+        padding: 10px;
+    }
+    .spacing-2{
+        padding: 20px;
+    }
+    .spacing-3{
+        padding: 30px;
+    }
+    .more{
+        position: absolute;
+        width: 100%;
+        color:#FFF;
+    }
+    .bottom-up{
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .fade{
+        top:0;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}

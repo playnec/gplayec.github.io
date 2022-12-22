@@ -1,0 +1,9 @@
+- name: Principal
+  link: /
+  title: Nuevos llegados
+- name: Categorias
+  link: /categories
+  title: Todos los productos en categorias
+- name: Ofertas
+  link: /offers
+  title: Ofertas de esta semana

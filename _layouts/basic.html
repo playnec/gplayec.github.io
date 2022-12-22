@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{page.title}}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ '/css/base.css' | relative_url }}" />
+	<link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}" />
+	<script type="text/javascript" src="{{ '/js/jquery-3.6.1.min.js' | relative_url }}"></script>
+	<script type="text/javascript" src="{{ '/js/plugin.modal.js' | relative_url }}"></script>
+	<script type="text/javascript" src="{{ '/js/plugin.form.js' | relative_url }}"></script>
+	<script type="text/javascript" src="{{ '/js/custom.js' | relative_url }}"></script>
+	<script type="text/javascript" src="{{ '/js/svg-injector.min.js' | relative_url }}"></script>
+</head>
+<body>
+	{% include header.html %}
+	<main>
+		<section class="content">
+			{{ content }}
+		</section>
+	</main>
+	{% include footer.html %}
+	{% include scripts.html %}
+</body>
+</html>

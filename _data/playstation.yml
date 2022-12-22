@@ -1,0 +1,11 @@
+name: Tarjetas digitales PlayStation Store
+description: Compra una tarjeta de regalo de PlayStation Store en una tienda online y te enviarán un correo electrónico con un código para canjear mediante nuestra tienda digital en tu consola PlayStation o mediante cualquier navegador web.
+src: '/img/playstation-plus.jpg'
+link: /item/playstation
+prices:
+  - name: $10
+    value: 10.00
+  - name: $25
+    value: 25.00
+  - name: $50
+    value: 50.00

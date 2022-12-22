@@ -1,0 +1,26 @@
+---
+layout: basic
+title: Tarjetas de PlayStation Store
+---
+
+<div class="page-item">
+    {% assign item = site.data.playstation %}
+    <div class="panel">
+        <h2>{{ item.name }}</h2>
+        <div class="box">
+            <div class="view">
+                <img class="cover" src="{{ item.src }}">
+            </div>
+        </div>
+        <div class="box">
+            <ul class="list-menu">
+                {% for price in item.prices %}
+                <li>Comprar <a class="btn btn-link" onclick="$.buy({{ price.value }}.toFixed(2));" href="{{ item.link }}#{{ price.value }}">código de {{ price.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <p>{{ item.description }}</p>
+        </div>
+    </div>
+</div>
