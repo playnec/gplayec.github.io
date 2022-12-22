@@ -2,3 +2,40 @@
 layout: basic
 title: Todos los productos en categorías
 ---
+
+<br>
+<h2>Consolas disponibles</h2>
+<br>
+<div class="row">
+    {% for item in site.data.consoles %}
+    <div class="col-3">
+        <div class="box option">
+            <img src="{{ item.src | relative_url }}">
+            <div class="more fade">
+                <div class="fix center">
+                    <button onclick="window.location.href='{{item.link}}'" class="btn btn-general">Realizar compra</button>
+                </div>
+            </div>
+            <span class="item-title"><b>{{ item.name }}</b></span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<br>
+<h2>Códigos de recarga</h2>
+<br>
+<div class="row">
+    {% for item in site.data.featured %}
+    <div class="col-3">
+        <div class="box option">
+            <img src="{{ item.src | relative_url }}">
+            <div class="more fade">
+                <div class="fix center">
+                    <button onclick="window.location.href='{{item.link}}'" class="btn btn-general">Realizar compra</button>
+                </div>
+            </div>
+            <span class="item-title"><b>{{ item.name }}</b></span>
+        </div>
+    </div>
+    {% endfor %}
+</div>

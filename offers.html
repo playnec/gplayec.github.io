@@ -3,6 +3,9 @@ layout: basic
 title: Ofertas de esta semana
 ---
 
+<br>
+<h2>Ofertas disponibles</h2>
+<br>
 <div class="row">
     {% for item in site.data.consoles %}
     <div class="col-3">
@@ -13,6 +16,7 @@ title: Ofertas de esta semana
                     <button onclick="window.location.href='{{item.link}}'" class="btn btn-general">Realizar compra</button>
                 </div>
             </div>
+            <span class="item-title"><b>{{ item.name }}</b></span>
         </div>
     </div>
     {% endfor %}
