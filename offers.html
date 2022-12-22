@@ -2,3 +2,18 @@
 layout: basic
 title: Ofertas de esta semana
 ---
+
+<div class="row">
+    {% for item in site.data.consoles %}
+    <div class="col-3">
+        <div class="box option">
+            <img src="{{ item.src | relative_url }}">
+            <div class="more fade">
+                <div class="fix center">
+                    <button onclick="window.location.href='{{item.link}}'" class="btn btn-general">Realizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,6 @@
+- name: Steam Deck
+  link: /item/steam-deck
+  src: /img/steam-deck.jpg
+- name: Nintendo Switch
+  link: /item/nintendo-switch
+  src: /img/nintendo-switch.jpg
