@@ -9,3 +9,5 @@ prices:
     value: 25.00
   - name: $50
     value: 50.00
+  - name: $100
+    value: 100.00
