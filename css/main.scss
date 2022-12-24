@@ -56,9 +56,9 @@ body{
 }
 
 /* Menu */
-#nav-menu{
+#sidemenu{
+    border-left: 2px solid #9A9A9A;
     .menu{
-        line-height: 42px;
         li{
             a{
                 padding: 10px;
@@ -75,6 +75,25 @@ body{
 
 .list-menu{
     list-style-type: none;
+}
+
+.btn-navbar{
+    margin: 0 auto;
+    background: #323232;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-right: 15px;
+    svg{
+        width: 15px;
+        height: 15px;
+        margin: 0px;
+        padding: 0px;
+        background: transparent;
+        fill: #FFF;
+    }
 }
 
 /* Box details */
@@ -170,4 +189,86 @@ body{
         height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
     }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    
+    #sidemenu{
+        width: 200px;
+        height: 100%;
+        background-color: #FFF;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .nav-menu{
+            margin: 20px;
+            line-height: 20px;
+            li{
+                a{
+                    font-size: 11pt;
+                    border: none;
+                }:hover{
+                    border: none;
+                }
+            }
+        }
+
+        &.collapsed{
+            left: -200px;
+        }
+
+    }
+
+    .nav-side{
+        .btn-collpase{
+            display: block;
+            visibility: visible;
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    #sidemenu{
+        width: 200px;
+        height: 100%;
+        background-color: #FFF;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .nav-menu{
+            margin: 20px;
+            line-height: 20px;
+            li{
+                a{
+                    font-size: 11pt;
+                    border: none;
+                }:hover{
+                    border: none;
+                }
+            }
+        }
+
+        &.collapsed{
+            left: -200px;
+        }
+
+    }
+
+    .nav-side{
+        .btn-collpase{
+            display: block;
+            visibility: visible;
+        }
+    }
+    
 }

@@ -241,12 +241,17 @@ body p{
 }
 
 .navbar .nav-side{
+	clear: both;
 	display: inline-flex;
 	margin: auto; /* align columns */
 }
 
+.navbar .nav-side:first-child{
+	margin-left: 1px;
+}
+
 .navbar .nav-side:last-child{
-    clear: both;
+	margin-right: 0px;
 }
 
 .navbar .hide{
@@ -871,20 +876,12 @@ hr{
 /* Tablets, Ipads (landscape) */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
-	/* align column rows */
-	.row .col-3{
-		width: 50%;
-	}
+	
 }
 
 /* Low Resolution Tablets, Mobiles (Landscape) */
 
 @media (min-width: 481px) and (max-width: 767px){
-
-	/* align column rows */
-	.row .col-3{
-		width: 50%;
-	}
 
 	.field-area{
 		display: inherit;

@@ -19,19 +19,21 @@
             <nav class="nav-brand">
                 <a class="logo" href="/"><img class="svg-image" data-src="/img/logo.svg"></a>
             </nav>
-            <nav id="nav-menu" class="nav-side">
-                <ul class="menu">
-                    
-                    <li><a href="/">Principal</a></li>
-                    
-                    <li><a href="/categories">Categorias</a></li>
-                    
-                    <li><a href="/offers">Ofertas</a></li>
-                    
-                </ul>
+            <nav class="nav-side">
+                <section id="sidemenu" class="collapsed">
+                    <ul class="menu nav-menu">
+                        
+                        <li><a href="/">Principal</a></li>
+                        
+                        <li><a href="/categories">Categorias</a></li>
+                        
+                        <li><a href="/offers">Ofertas</a></li>
+                        
+                    </ul>
+                </section>
             </nav>
-            <nav class="nav-side hide">
-                <button id="button" class="btn btn-navbar btn-collpase hide">
+            <nav class="nav-side">
+                <button id="button" class="btn btn-navbar btn-collpase hide ">
                     <img class="svg-image" data-src="/img/svg/menu.svg">
                 </button>
             </nav>
@@ -64,6 +66,7 @@
 </footer>
 	<script type="text/javascript">
 
+    /* box effects */
     var option = $('.option').css({overflow: 'hidden'});
     var optionBottom = option.find('.bottom-up');
     
@@ -73,8 +76,6 @@
     }, function(){
         $(this).find('.bottom-up').stop().animate({bottom: -optionBottom.width()}, 150, 'swing');
     });
-
-    /**/
     option.find('.fade').css({display:'none'});
     option.hover(function(){
         $(this).find('.fade').stop().fadeIn(200);
@@ -82,7 +83,50 @@
         $(this).find('.fade').stop().fadeOut(200);
     });
 
-    /**/
+    /* menu */
+    $(document).click(function(event){
+        
+        var target = $(event.target),
+        
+        collpase = function(){
+            
+            var menu = $('#sidemenu');
+            
+            if (menu.is('.collapsed')) {
+                
+                menu.stop().animate({
+                    left: 0
+                }, 250, function () {
+                    menu.removeAttr('style').removeClass('collapsed');
+                });
+            
+            } else {
+                menu.stop().animate({
+                    left: '-200px'
+                }, 250, function () {
+                    menu.addClass('collapsed').removeAttr('style')
+                });
+            }
+
+        }
+        
+        if(target.is('#sidemenu, #sidemenu *, .btn-collpase, .btn-collpase *')) {
+
+            if (target.is('.btn-navbar.btn-collpase, .btn-collpase *')) {
+                collpase();
+            }
+
+        } else
+            if (!$('#sidemenu').is('.collapsed')) {
+                collpase();
+            }
+
+        event.stopPropagation();
+
+        return;
+    });
+
+    /* Buy button */
     $.buy = function(price){
 
         $.get('/pagos', function(responde_html){
@@ -119,6 +163,7 @@
 
     }
 
+    /* Insert svg images */
     SVGInjector($(document).find('.svg-image'), {
         evalScripts: 'once'
     });

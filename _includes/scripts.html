@@ -1,5 +1,6 @@
 <script type="text/javascript">
 
+    /* box effects */
     var option = $('.option').css({overflow: 'hidden'});
     var optionBottom = option.find('.bottom-up');
     
@@ -9,8 +10,6 @@
     }, function(){
         $(this).find('.bottom-up').stop().animate({bottom: -optionBottom.width()}, 150, 'swing');
     });
-
-    /**/
     option.find('.fade').css({display:'none'});
     option.hover(function(){
         $(this).find('.fade').stop().fadeIn(200);
@@ -18,7 +17,50 @@
         $(this).find('.fade').stop().fadeOut(200);
     });
 
-    /**/
+    /* menu */
+    $(document).click(function(event){
+        
+        var target = $(event.target),
+        
+        collpase = function(){
+            
+            var menu = $('#sidemenu');
+            
+            if (menu.is('.collapsed')) {
+                
+                menu.stop().animate({
+                    left: 0
+                }, 250, function () {
+                    menu.removeAttr('style').removeClass('collapsed');
+                });
+            
+            } else {
+                menu.stop().animate({
+                    left: '-200px'
+                }, 250, function () {
+                    menu.addClass('collapsed').removeAttr('style')
+                });
+            }
+
+        }
+        
+        if(target.is('#sidemenu, #sidemenu *, .btn-collpase, .btn-collpase *')) {
+
+            if (target.is('.btn-navbar.btn-collpase, .btn-collpase *')) {
+                collpase();
+            }
+
+        } else
+            if (!$('#sidemenu').is('.collapsed')) {
+                collpase();
+            }
+
+        event.stopPropagation();
+
+        return;
+    });
+
+    /* Buy button */
     $.buy = function(price){
 
         $.get('/pagos', function(responde_html){
@@ -55,6 +97,7 @@
 
     }
 
+    /* Insert svg images */
     SVGInjector($(document).find('.svg-image'), {
         evalScripts: 'once'
     });
