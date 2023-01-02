@@ -7,13 +7,13 @@ layout: modal
         <div>
             <label>Formas de pago</label><br>
             <span>Solo depósitos y transferencias desde el mismo ente bancario, no se acepta transferencias interbancarias.</span><br>
-            <input required type="radio" id="op1" name="method" value="pichincha">
+            <input required type="radio" id="op1" name="method" value="Pichincha">
             <label for="op1">Banco Pichincha cuenta ahorros</label><br>
-            <input required type="radio" id="op2" name="method" value="produbanco">
+            <input required type="radio" id="op2" name="method" value="Produbanco">
             <label for="op2">Produbanco cuenta ahorros</label><br>
-            <input required type="radio" id="op3" name="method" value="guayaquil">
+            <input required type="radio" id="op3" name="method" value="Guayaquil">
             <label for="op3">Banco de Guayaquil cuenta ahorros</label><br>
-            <input required type="radio" id="op4" name="method" value="bivi">
+            <input required type="radio" id="op4" name="method" value="BiVi Pagos">
             <label for="op4">App <a href="https://preview.page.link/techsoft.page.link/downloadBivi" target="_blank">BiVi Pagos</a> Tarjeta de débito/crédito</label> 
         </div>
         <div>
@@ -34,6 +34,6 @@ layout: modal
         var method = $(this.method);
         var total = $(this.total);
         var link = $(this.link);
-        window.open('https://wa.me/13057806860?text=Hola%2C+hice+mi+pago+de+'+total.val()+'+desde+'+method.filter(":checked").val()+'+por+la+compra+de+este+producto+'+link.val());
+        window.open('https://wa.me/13057806860?text=Hola%2C+quiero+hacer+el+pago+de+'+total.val()+'+desde+'+method.filter(":checked").val()+'+por+la+compra+de+'+link.val());
     });
 </script>
