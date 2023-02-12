@@ -2,28 +2,24 @@
     <form id="verifyPay" class="form" action="https://wa.me/13057806860">
     <fieldset>
         <div>
-            <label>Forma de pago</label><br>
-            <span>Solo depósitos y transferencias desde el mismo banco, no se acepta transferencias interbancarias.</span><br>
-            <input required type="radio" id="op1" name="method" value="pichincha">
-            <label for="op1">Banco Pichincha Ahorros <b>#2205151935</b> - Titular: <b>Jerez Manyanda</b></label><br>
-            <input required type="radio" id="op2" name="method" value="produbanco">
-            <label for="op2">Produbanco Ahorros <b>#18005016163</b> - Titular: <b>Jerez Manyanda</b></label><br>
-            <input required type="radio" id="op3" name="method" value="guayaquil">
-            <label for="op3">Banco de Guayaquil <b>#0041017320</b> - Titular: <b>Jerez Manyanda</b></label><br>
-            <input required type="radio" id="op4" name="method" value="bivi">
-            <label for="op4"><a href="https://preview.page.link/techsoft.page.link/downloadBivi" target="_blank">App BiVi</a> <b>+593 982615237</b></label> 
-        </div>
-        <div>
-            <label>Número referencia de pago</label>
-            <input required type="text" name="reference" placeholder="0000001">
+            <label>Formas de pago</label><br>
+            <span>Solo depósitos y transferencias desde el mismo ente bancario, no se acepta transferencias interbancarias.</span><br>
+            <input required type="radio" id="op1" name="method" value="Pichincha">
+            <label for="op1">Banco Pichincha <b>cuenta ahorros</b></label><br>
+            <input required type="radio" id="op2" name="method" value="Produbanco">
+            <label for="op2">Produbanco <b>cuenta ahorros</b></label><br>
+            <input required type="radio" id="op3" name="method" value="Guayaquil">
+            <label for="op3">Banco de Guayaquil <b>cuenta ahorros</b></label><br>
+            <input required type="radio" id="op4" name="method" value="BiVi Pagos">
+            <label for="op4">Tarjeta de débito/crédito desde <a href="https://preview.page.link/techsoft.page.link/downloadBivi" target="_blank"><b>BiVi Pagos</b></a></label> 
         </div>
         <br>
         <div>
             <input required id="custumer-terms" type="checkbox" name="terms">
-            <label for="custumer-terms">Acepto los términos y condicones al realizar mi pago</label>
+            <label for="custumer-terms">He leído los <a href="https://gplayec.com/terms" target="_blank">términos y condiciones de compra.</a></label>
         </div>
     </fieldset>
-    <button type="submit" class="btn btn-default">Verificar pago</button>
+    <button type="submit" class="btn btn-default">Solicitar pago</button>
 </form>
 <script>
     $('form#verifyPay').submit(function(){
@@ -31,7 +27,7 @@
         var method = $(this.method);
         var total = $(this.total);
         var link = $(this.link);
-        window.open('https://wa.me/13057806860?text=Hola%2C+hice+mi+pago+de+'+total.val()+'+desde+'+method.filter(":checked").val()+'+por+la+compra+de+este+producto+'+link.val());
+        window.open('https://wa.me/13057806860?text=Hola%2C+quiero+hacer+el+pago+de+'+total.val()+'+desde+'+method.filter(":checked").val()+'+por+la+compra+de+'+link.val());
     });
 </script>
 </section>

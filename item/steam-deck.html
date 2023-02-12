@@ -13,15 +13,9 @@ title: Steam Deck
             </div>
         </div>
         <div class="box">
-            {% if item.stock == 0 %}
-            <p>No hay Stock</p>
-            {% else %}
             <ul class="list-menu">
-                {% for price in item.prices %}
-                <li>Comprar <a class="btn btn-link" onclick="$.buy({{ price.value }}.toFixed(2));" href="{{ item.link }}#{{ price.value }}">portátil {{ price.name }}</a></li>
-                {% endfor %}
+                <li>Ayudame a <a class="btn btn-link" onclick="$.buy(10.0.toFixed(2));" href="{{ item.link }}#{{ price.value }}">Reservarlo</a></li>
             </ul>
-            {% endif %}
         </div>
         <div>
             <p>{{ item.description }}</p>
