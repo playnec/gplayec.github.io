@@ -3,7 +3,7 @@ description: <h2>El miembro más nuevo de la familia Switch.</h2><br><p>Este nue
 specs: "64 GB internal storage"
 src: '/img/nintendo-switch.jpg'
 link: /item/nintendo-switch
-stock: 1
+stock: 0
 prices:
   - name: $430
     value: 430.00

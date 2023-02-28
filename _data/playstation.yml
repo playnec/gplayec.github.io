@@ -4,14 +4,10 @@ src: '/img/playstation-plus.jpg'
 link: /item/playstation
 prices:
   - name: $10
-    value: 10.00
+    value: 10.22
   - name: $25
-    value: 25.00
+    value: 25.40
   - name: $50
-    value: 50.00
-  - name: $60
-    value: 60.00
-  - name: $75
-    value: 75.00
+    value: 50.50
   - name: $100
-    value: 100.00
+    value: 100.28
