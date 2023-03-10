@@ -1,0 +1,21 @@
+name: Códigos de iTunes
+description: Los códigos de Apple iTunes te sirven para realizar compras de la tienda de Apple iTunes y App Store, solamente canjeando los códigos tendrás tu saldo para hacer tus compras digitales.
+src: '/img/apple.jpg'
+link: /item/apple
+prices:
+  - name: $5
+    value: 5.50
+  - name: $10
+    value: 10.77
+  - name: $15
+    value: 15.89
+  - name: $20
+    value: 21.48
+  - name: $25
+    value: 26.97
+  - name: $30
+    value: 32.22
+  - name: $50
+    value: 53.70
+  - name: $100
+    value: 104.40
