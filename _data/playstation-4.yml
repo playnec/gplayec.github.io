@@ -1,0 +1,11 @@
+name: Consola de Videojuegos Sony PlayStation 4
+description: Consola de videojuegos Sony PlayStation 4, disponible en 3 modelos Modelo Standar de 500GB - Modelo Slim 1TB - Modelo Pro 1TB.
+src: '/img/playstation-4-500GB.jpg'
+link: /item/playstation-4
+prices:
+  - name: Fat 500GB
+    value: 360.00
+  - name: Slim 1TB
+    value: 450.00
+  - name: Pro 1TB
+    value: 699.99

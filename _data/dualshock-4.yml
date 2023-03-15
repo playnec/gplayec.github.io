@@ -1,0 +1,9 @@
+name: Mando Oficial Dualshock 4 de Sony
+description: Adquiere tu mando dualshock 4 compatible con tu consola PlaySation 4 y PlayStation 3. Con funciones de vibración, panel táctil y giroscopio.
+src: '/img/dualshock-4-black.jpg'
+link: /item/dualshock-4
+prices:
+  - name: Negro
+    value: 75.00
+  - name: Blanco
+    value: 85.00
